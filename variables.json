@@ -1,0 +1,19 @@
+{
+	"brand": "letemps",
+	"title": "Au chevet des oliviers du Salento",
+	"description": "Les oliviers centenaires de la région du Salento, dans le sud de l’Italie, sont frappés par une mystérieuse épidémie qui laisse présager le pire pour leur avenir",
+	"twitterDescription": "Les oliviers centenaires de la région du Salento, dans le sud de l’Italie, sont frappés par une mystérieuse épidémie qui laisse présager le pire pour leur avenir",
+	"authors": "Fabien Goubet, Eddy Mottaz, César Greppin",
+	"imgSocial": "img/share/social.jpg", 
+	
+
+	"navBarStyle": "black",
+	"navBarOffset": "0",
+	"navBarLocked": false,
+	"devmode": false,
+
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "http://www.letemps.ch"
+	}
+}
