@@ -43,14 +43,14 @@ nav
             position: relative;
             font-family: $font-title;
             font-weight: 600;
-            font-size: 26px;
+            font-size: 28px;
             line-height: 1em;
             min-height: 30px;
             margin-bottom: 15px;
 
             &.is-active 
             { 
-                color: $brand-color;
+                color: $color00;
             }
 
             &.is-disabled
@@ -110,7 +110,8 @@ nav
         .follow--text
         {
             display: block;
-             font-size: 0.75rem;
+            font-size: 0.75rem;
+            font-family: $font-text;
             //  vertical-align: baseline;
         }
     }

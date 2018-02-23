@@ -2,7 +2,23 @@
 //=====================================================================//
 // COLORS
 //=====================================================================//
-$brand-color: #930025;  
+$color00: #930025;  
+$color01: #930025; 
+$color02: #d32e64; 
+$color03: #930025; 
+$color04: #930025; 
+$color05: #930025; 
+$color06: #930025; 
+$color07: #930025; 
+
+.c00 .text-color { color: $color00; }
+.c01 .text-color { color: $color01; }
+.c02 .text-color { color: $color02; }
+.c03 .text-color { color: $color03; }
+.c04 .text-color { color: $color04; }
+.c05 .text-color { color: $color05; }
+.c06 .text-color { color: $color06; }
+.c07 .text-color { color: $color07; }
 
 //=====================================================================//
 // BREAKPOINTS (BOOTSTRAP)
@@ -42,7 +58,7 @@ html, body
   // - dans mdb, mettre un media-slot - iframe
   // - juste mettre cette propriété ci-dessous et normalament pas besoin de "scrolling='no'" comme atribut iframe
   // - si je veux la scrollbar en dehors du rapport 16/9, il faut commencer à guezner avec pym
-  overflow: hidden;
+  // overflow: hidden;
 }
 html 
 { 
@@ -56,7 +72,7 @@ body
 {
   background:rgb(231, 231, 231);
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   line-height: 1em;
 }
 
