@@ -59,9 +59,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 
-	// &:hover {
-	// 	border-bottom-color: transparent;
-	// }
+	&:hover {
+		border-bottom-color: transparent;
+		text-decoration: underline;
+	}
 }
 
 strong, b {
@@ -131,8 +132,11 @@ h4 {
 }
 
 h5 {
-	font-size: modular-scale(5);
-    line-height: 1.25;
+	font-size: modular-scale(1);
+	line-height: 1.25;
+	font-family: $font-title;
+	margin-top: 0;
+	margin-bottom: 15px;
 }
 
 h6 {
@@ -203,7 +207,7 @@ hr {
 {
 	font-family: $font-text;
 	font-style: italic;
-	font-size: 15px;
+	font-size: 14px;
 	margin-left: -55px;
 }
 

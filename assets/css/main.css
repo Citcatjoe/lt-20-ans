@@ -38,7 +38,8 @@ body {
   background: #e7e7e7;
   position: relative;
   min-height: 100vh;
-  line-height: 1em; }
+  line-height: 1em;
+  background: url("../../img/aside-bg.jpg"); }
 
 img {
   display: block;
@@ -75,6 +76,9 @@ img {
 a {
   text-decoration: none;
   color: inherit; }
+  a:hover {
+    border-bottom-color: transparent;
+    text-decoration: underline; }
 
 p {
   font-family: "Rooney";
@@ -108,8 +112,11 @@ h4 {
   line-height: 1.25; }
 
 h5 {
-  font-size: 3.0517578125em;
-  line-height: 1.25; }
+  font-size: 1.25em;
+  line-height: 1.25;
+  font-family: "Apercu";
+  margin-top: 0;
+  margin-bottom: 15px; }
 
 h6 {
   margin: 0 0 40px 0;
@@ -125,7 +132,7 @@ h6 {
 .date {
   font-family: "Rooney";
   font-style: italic;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: -55px; }
 
 .align-left {
@@ -138,7 +145,7 @@ h6 {
   text-align: right; }
 
 aside {
-  position: fixed;
+  position: relative;
   width: 495px;
   float: left;
   background: url("../../img/aside-bg.jpg");
@@ -148,10 +155,20 @@ aside {
 
 main {
   width: calc(100% - 495px);
-  float: right;
+  margin-left: 495px;
   background: white;
   height: 100%;
-  padding: 120px 145px 145px 145px; }
+  padding: 120px 145px 50px 145px; }
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  background: #930025;
+  padding: 0 0 0 90px;
+  color: white;
+  font-family: "Rooney";
+  margin-top: -10px; }
 
 #logo-lt-header {
   position: absolute;
@@ -173,6 +190,21 @@ main {
   width: auto;
   top: 0; }
 
+#glyph-footer {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 0;
+  top: 0; }
+
+#gobackup {
+  position: absolute;
+  height: 50%;
+  width: auto;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%); }
+
 nav ul {
   list-style: none;
   padding: 0; }
@@ -188,7 +220,7 @@ nav ul {
       color: #930025; }
     nav ul li.is-disabled {
       font-family: "Rooney";
-      font-size: 15px;
+      font-size: 14px;
       padding-top: 3px;
       font-style: italic; }
     nav ul li .count {
@@ -222,6 +254,45 @@ nav ul {
       display: block;
       font-size: 0.75rem;
       font-family: "Rooney"; }
+
+.themelist article {
+  position: relative;
+  margin-bottom: 30px; }
+  .themelist article.margin1 {
+    margin-left: 450px; }
+  .themelist article.margin2 {
+    margin-left: 110px; }
+  .themelist article .count {
+    position: absolute;
+    left: -55px;
+    top: 15px;
+    font-family: "Apercu";
+    font-size: 45px;
+    opacity: .075;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility; }
+  .themelist article .date {
+    margin-left: 0;
+    padding-left: 30px; }
+
+footer ul {
+  font-size: 13px;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0; }
+  footer ul li {
+    list-style: none;
+    display: inline;
+    float: left;
+    height: 100%;
+    margin-right: 25px;
+    padding-top: 19px; }
+
+.spacer-md {
+  width: 100%;
+  height: 40px; }
 
 .brand-nav {
   display: none; }

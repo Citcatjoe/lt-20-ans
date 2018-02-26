@@ -63,6 +63,7 @@ html, body
 html 
 { 
     font-size: 16px;
+   
 
     @include breakpoint(xl) {
     }
@@ -74,6 +75,7 @@ body
   position: relative;
   min-height: 100vh;
   line-height: 1em;
+   background: url('../../img/aside-bg.jpg'); 
 }
 
 img 

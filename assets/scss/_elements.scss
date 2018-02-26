@@ -24,6 +24,25 @@
     top: 0;
 }
 
+#glyph-footer
+{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 0;
+    top: 0;
+} 
+
+#gobackup
+{
+    position: absolute;
+    height: 50%;
+    width: auto;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
 nav 
 {
      
@@ -56,7 +75,7 @@ nav
             &.is-disabled
             {
                 font-family: $font-text;
-                font-size: 15px;
+                font-size: 14px;
                 padding-top: 3px;
                 font-style: italic;
             }
@@ -115,4 +134,65 @@ nav
             //  vertical-align: baseline;
         }
     }
+}
+
+.themelist 
+{
+    article
+    {
+        position: relative;
+        margin-bottom: 30px;
+
+        &.margin1 {margin-left: 450px;}
+        &.margin2 {margin-left: 110px;}
+        
+        .count 
+        {
+            position: absolute;
+            left: -55px;
+            top: 15px;
+            font-family: $font-title;
+            font-size: 45px;
+            opacity: .075;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased; 
+            -moz-osx-font-smoothing: grayscale; 
+            text-rendering: optimizeLegibility;
+        }
+
+        .date 
+        {
+            margin-left: 0;
+            padding-left: 30px; 
+        }
+    }
+}
+
+footer 
+{
+    ul 
+    {
+        font-size: 13px;
+        width: 100%;
+        margin-left:0;
+        padding-left:0;
+        //height: 100%;
+        //background: yellow;
+
+        li 
+        {
+            list-style: none;
+            display: inline;
+            float: left;
+            height: 100%;
+            margin-right: 25px;
+            padding-top: 19px;
+        }
+    }
+}
+
+.spacer-md 
+{
+    width: 100%;
+    height: 40px;
 }

@@ -60,6 +60,24 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/_prod\/Capture d’écran 2018-02-26 à 13.32.29.png": {
+		"ft": 32768,
+		"iS": 45140,
+		"oA": 0,
+		"oAP": "\/_prod\/Capture d’écran 2018-02-26 à 13.32.29.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prod\/LeTemps_gamme_couleur.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prod\/LeTemps_gamme_couleur.pdf",
+		"oF": 0
+		},
 	"\/assets\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1542,6 +1560,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/glyph-00b.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/glyph-00b.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/glyph-01.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1607,6 +1635,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/glyph-07.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/gobackup.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/gobackup.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
