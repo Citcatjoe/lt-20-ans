@@ -1,80 +1,5 @@
-<!DOCTYPE HTML>
-
-<html> 
-
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-		<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/TextPlugin.min.js"></script> -->
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
-		<script src="assets/js/main.js"></script>
-	</head>  
- 
-	<body style="padding-top: {{ navBarOffset }};">
-		
-		<!-- <div class="overlay">
-			<img class="logo-brand" src="img/logo-lt-blanc.svg" alt="">
-			<div class="spinner">
-				<div class="double-bounce1"></div>
-				<div class="double-bounce2"></div>
-			</div>
-		</div>  -->
-
-		<img src="img/glyph-00.svg" alt="" id="glyph-big" class="flip flip-00">	
-		<img src="img/glyph-01.svg" alt="" id="glyph-big" class="flip flip-01">	
-		<img src="img/glyph-02.svg" alt="" id="glyph-big" class="flip flip-02">
-		<img src="img/glyph-03.svg" alt="" id="glyph-big" class="flip flip-03">
-		<img src="img/glyph-04.svg" alt="" id="glyph-big" class="flip flip-04">
-		<img src="img/glyph-05.svg" alt="" id="glyph-big" class="flip flip-05"> 
-		<img src="img/glyph-06.svg" alt="" id="glyph-big" class="flip flip-06">
-		<img src="img/glyph-07.svg" alt="" id="glyph-big" class="flip flip-07">
-
-		<aside>
-			<img src="img/logo-lt-rouge.svg" alt="logo Le Temps" id="logo-lt-header">
-			<h6>Navigation</h6>
-			<nav>
-				<ul> 
-					<li class="link c00"><span class="count">00</span><a href="?page=index">Le Temps de s'engager</a></li>
-					<li class="link c01"><span class="count">01</span>Journalisme</li>
-					<li class="link is-active c02"><span class="count">02</span><a href="?page=02">Égalité hommes-femmes</a></li>
-					<li class="link is-disabled c03"><span class="count">03</span>—  (19 mai - 16 juin)</li>
-					<li class="link is-disabled c04"><span class="count">04</span>—  (19 mai - 16 juin)</li>
-					<li class="link is-disabled c05"><span class="count">05</span>—  (19 mai - 16 juin)</li>
-					<li class="link is-disabled c06"><span class="count">06</span>—  (19 mai - 16 juin)</li> 
-					<li class="link is-disabled c07"><span class="count">07</span>— (19 mai - 16 juin)</li>
-				</ul>
-			</nav>
-			<div class="aside--footer">
-				<img src="img/glyph-00.svg" alt="" id="glyph-small" class="flip flip-00">	
-				<img src="img/glyph-01.svg" alt="" id="glyph-small" class="flip flip-01">	
-				<img src="img/glyph-02.svg" alt="" id="glyph-small" class="flip flip-02">
-				<img src="img/glyph-03.svg" alt="" id="glyph-small" class="flip flip-03">
-				<img src="img/glyph-04.svg" alt="" id="glyph-small" class="flip flip-04">
-				<img src="img/glyph-05.svg" alt="" id="glyph-small" class="flip flip-05">
-				<img src="img/glyph-06.svg" alt="" id="glyph-small" class="flip flip-06">
-				<img src="img/glyph-07.svg" alt="" id="glyph-small" class="flip flip-07">
-				<div class="follow">
-					<span class="follow--social">
-						<i class="fa fa-facebook-f"></i>
-						<i class="fa fa-twitter"></i>
-						<i class="fa fa-instagram"></i>
-						<i class="fa fa-youtube"></i>
-					</span>
-					<span class="follow--text">
-						Suivez les 20 ans du Temps sur les réseaux sociaux
-					</span>
-				</div>
-			</div>
-		</aside>
-
-		<main id="barba-wrapper">
+{% extends "index.html.twig" %}
+{% block container %}
 			<div class="barba-container">
 				<div class="c02"> 
 					<h6>Le Temps à 30 ans</h6>
@@ -88,7 +13,7 @@
 					<p class="margin2">Les 20 ans seront l'occasion de soutenir sept causes qu'il ne faudra pas seulement interroger des experts mais inciter les lecteurs à vivre une expérience.</p>
 					<h2>Les 7 causes</h2> 
 					<div class="spacer-md"></div>
-					<div class="themelist">
+					{# <div class="themelist">
 						<article class="margin2">
 							<span class="count">01</span>
 							<h5>Journalisme</h5>
@@ -124,30 +49,9 @@
 							<h5>La Suisse,<br>laboratoire politique</h5>
 							<span class="date">— (15 octobre - 17 novembre)</span>
 						</article>
-					</div>
+					</div> #}
 				</div>
 
 				
 			</div>
-		</main>
-
-		<footer>
-			<img src="img/glyph-00b.svg" alt="" id="glyph-footer">
-			<ul>
-				<li><a href="https://www.letemps.ch/a-propos" target="_blank">À propos</a></li>
-				<li><a href="https://www.letemps.ch/abos" target="_blank">Abonnements</a></li>
-				<li><a href="http://www.admeira.ch/fr/brands/digital/letemps-ch" target="_blank">Publicité</a></li>
-				<li><a href="https://www.letemps.ch/abonnes/services" target="_blank">Services</a></li>
-				<li><a href="https://www.letemps.ch/contact/annuaire" target="_blank">Impressum</a></li>
-				<li><a href="https://www.letemps.ch/protection-donnees" target="_blank">Protections des données</a></li>
-			</ul>
-			<img src="img/gobackup.svg" alt="" id="gobackup"> 
-		</footer>
-
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/barba.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script> 
-		
-	</body>
-	 
-</html>
+{% endblock %}

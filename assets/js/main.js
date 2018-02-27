@@ -1,141 +1,126 @@
-jQuery(document).ready(function($) 
-{
-	
-  Barba.Pjax.start();
-  var FadeTransition = Barba.BaseTransition.extend({
-    start: function() {
-      /**
-       * This function is automatically called as soon the Transition starts
-       * this.newContainerLoading is a Promise for the loading of the new container
-       * (Barba.js also comes with an handy Promise polyfill!)
-       */
+jQuery(document).ready(function($) {
 
-      // As soon the loading is finished and the old page is faded out, let's fade the new page
-      Promise
-        .all([this.newContainerLoading, this.fadeOut()])
-        .then(this.fadeIn.bind(this));
-    },
+    $('.overlay').fadeOut('slow');
+    
+    Barba.Pjax.start();
+    var FadeTransition = Barba.BaseTransition.extend({
+        start: function() {
+            /**
+             * This function is automatically called as soon the Transition starts
+             * this.newContainerLoading is a Promise for the loading of the new container
+             * (Barba.js also comes with an handy Promise polyfill!)
+             */
 
-    fadeOut: function() {
-      /**
-       * this.oldContainer is the HTMLElement of the old Container
-       */
+            // As soon the loading is finished and the old page is faded out, let's fade the new page
+            Promise
+            .all([this.newContainerLoading, this.fadeOut()])
+            .then(this.fadeIn.bind(this));
+        },
 
-      return $(this.oldContainer).animate({ opacity: 0 }).promise();
-    },
+        fadeOut: function() {
+            /**
+             * this.oldContainer is the HTMLElement of the old Container
+             */
 
-    fadeIn: function() {
-      /**
-       * this.newContainer is the HTMLElement of the new Container
-       * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
-       * Please note, newContainer is available just after newContainerLoading is resolved!
-       */
+            return $(this.oldContainer).animate({ opacity: 0 }).promise();
+        },
 
-      var _this = this;
-      var $el = $(this.newContainer);
+        fadeIn: function() {
+            /**
+             * this.newContainer is the HTMLElement of the new Container
+             * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+             * Please note, newContainer is available just after newContainerLoading is resolved!
+             */
 
-      $(this.oldContainer).hide();
+            var _this = this;
+            var $el = $(this.newContainer);
 
-      $el.css({
-        visibility : 'visible',
-        opacity : 0
-      });
+            $(this.oldContainer).hide();
 
-      $el.animate({ opacity: 1 }, 400, function() {
-        /**
-         * Do not forget to call .done() as soon your transition is finished!
-         * .done() will automatically remove from the DOM the old Container
-         */
+            $el.css({                     
+            visibility : 'visible',
+            opacity : 0
+            });
 
-        _this.done();
-      });
-    }
-  });
-  /**
-   * Next step, you have to tell Barba to use the new Transition
-   */
-  Barba.Pjax.getTransition = function() {
+            $el.animate({ opacity: 1 }, 400, function() {
+            /**
+             * Do not forget to call .done() as soon your transition is finished!
+             * .done() will automatically remove from the DOM the old Container
+             */
+
+            _this.done();
+            });
+        }
+    });
     /**
-     * Here you can use your own logic!
-     * For example you can use different Transition based on the current page or link...
+     * Next step, you have to tell Barba to use the new Transition
      */
-    return FadeTransition;
-  };
+    Barba.Pjax.getTransition = function() {
+        /**
+         * Here you can use your own logic!
+         * For example you can use different Transition based on the current page or link...
+         */
+        return FadeTransition;
+    };
         
-  
-  
-  
-  
-  
-  
-  
-            var glyphOutTl = new TimelineMax(),
-            glyphInTl = new TimelineMax(),
-            $flips = $('.flip'),
-            $body = $('body');
+    var glyphOutTl = new TimelineMax(),
+    glyphInTl = new TimelineMax(),
+    $flips = $('.flip'),
+    $body = $('body');
 
-        clearStage();
-        function clearStage() {
-            var clearTl = new TimelineMax(),
-                glyphActiveN = $('.link.is-active').find('.count').html();
-                
-            clearTl
-              // .set($flip00, { transformOrigin: 'center center' })
-              .set($flips, { autoAlpha: 0, rotationY: 90 });
+    clearStage();
+    function clearStage() {
+        var clearTl = new TimelineMax(),
+            glyphActiveN = $('.link.is-active').find('.count').html();
+            
+        clearTl
+            // .set($flip00, { transformOrigin: 'center center' })
+            .set($flips, { autoAlpha: 0, rotationY: 90 });
 
-            glyphIn(glyphActiveN);
-            return clearTl;
+        glyphIn(glyphActiveN);
+        return clearTl;
+    }
+    $('.link:not(.is-disabled)').click(function () { 
+        if($body.hasClass('is-animating'))
+        {}
+        else
+        {
+            var o = $('.link.is-active').find('.count').html();
+            var i = $(this).find('.count').html();
+            $('.link.is-active').removeClass('is-active');
+            $(this).addClass('is-active');
         }
-        $('.link:not(.is-disabled)').click(function () { 
-            // if(this.hasClass('is-disabled'))
-            // {
-            //   alert('is-disabled'); 
-            // }
-            if($body.hasClass('is-animating'))
-            {}
-            else
-            {
-              var o = $('.link.is-active').find('.count').html();
-              var i = $(this).find('.count').html();
-              $('.link.is-active').removeClass('is-active');
-              $(this).addClass('is-active');
-            }
-            glyphOut(o, i);
-        }); 
-        function glyphOut(o, i){
-          var glyphOuting = '.flip-' + o;
-          console.log(o);
-          glyphOutTl 
-            .set($body, { className: '+=is-animating' })
-            .to($(glyphOuting), 1, { autoAlpha: 0, rotationY: 90, ease: Power4.easeInOut, onComplete: glyphIn, onCompleteParams: [i] });
-        }
-        function glyphIn(i) {
-          console.log(i);
-          var glyphInning = '.flip-' + i;
-          console.log(i + ' va rentrer');
+        glyphOut(o, i);
+    }); 
+    function glyphOut(o, i){
+        var glyphOuting = '.flip-' + o;
+        // console.log(o);
+        glyphOutTl 
+        .set($body, { className: '+=is-animating' })
+        .to($(glyphOuting), 1, { autoAlpha: 0, rotationY: 90, ease: Power4.easeInOut, onComplete: glyphIn, onCompleteParams: [i] });
+    }
+    function glyphIn(i) {
+        // console.log(i);
+        var glyphInning = '.flip-' + i;
+        // console.log(i + ' va rentrer');
 
-          glyphInTl
-            .to($(glyphInning), 1, { autoAlpha: 1, rotationY: 0, ease: Power4.easeInOut })
-            .set($body, { className: '-=is-animating' });
-        }
+        glyphInTl
+        .to($(glyphInning), 1, { autoAlpha: 1, rotationY: 0, ease: Power4.easeInOut })
+        .set($body, { className: '-=is-animating' });
+    }
 
+    $('#gobackup').click(function () { 
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    }); 
 
-
-
-  $('#gobackup').click(function () {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
-  }); 
-
-  
-  $('.themelist article').click(function () {
-    var themeN = null;
-    var themeTriggered = 'c' + $(this).find('.count').html();
-    //themeN = ($(this).find('.count').html());
-    //console.log(themeTriggered);
-    $('nav ul li:first-child').trigger('click');
-    return false;
-  }); 
+    $('#barba-wrapper').on('click', '.themelist article:not(.is-disabled)', function () {
+        var themeTriggered = 'c' + $(this).find('.count').html();
+        var url = '/?page=' + $(this).find('.count').html();
+        $('nav ul li.' + themeTriggered).trigger('click');
+        Barba.Pjax.goTo(url);
+        return false;
+    }); 
 
 
 
