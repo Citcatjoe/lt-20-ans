@@ -5,11 +5,22 @@
 $color00: #930025;  
 $color01: #930025; 
 $color02: #d32e64; 
-$color03: #930025; 
-$color04: #930025; 
-$color05: #930025; 
-$color06: #930025; 
-$color07: #930025; 
+$color03: #a400b3; 
+$color04: #004da6; 
+$color05: #00a6a3; 
+$color06: #00a666; 
+$color07: #2fb312;   
+
+nav ul li.c00:hover, nav ul li.c00.is-active { color: $color00; } 
+nav ul li.c01:hover, nav ul li.c01.is-active { color: $color01; } 
+nav ul li.c02:hover, nav ul li.c02.is-active { color: $color02; } 
+nav ul li.c03:hover, nav ul li.c03.is-active { color: $color03; } 
+nav ul li.c04:hover, nav ul li.c04.is-active { color: $color04; } 
+nav ul li.c05:hover, nav ul li.c05.is-active { color: $color05; } 
+nav ul li.c06:hover, nav ul li.c06.is-active { color: $color06; } 
+nav ul li.c07:hover, nav ul li.c07.is-active { color: $color07; } 
+
+nav ul li.is-disabled:hover {  color: initial !important;}  
 
 .c00 .text-color { color: $color00; }
 .c01 .text-color { color: $color01; }

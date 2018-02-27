@@ -1,87 +1,75 @@
 jQuery(document).ready(function($) 
 {
 	
-	 //alert('elol');
-	 Barba.Pjax.start();
-
-// 	 var HideShowTransition = Barba.BaseTransition.extend({
-// 		  start: function() {
-// 		    this.newContainerLoading.then(this.finish.bind(this));
-// 		  },
-
-// 		  finish: function() {
-// 		    document.body.scrollTop = 0;
-// 		    this.done();
-// 		  }
-// 		});
-
-// 	 Barba.Pjax.getTransition = function() {
-//   return HideShowTransition;
-// };
-
-var FadeTransition = Barba.BaseTransition.extend({
-  start: function() {
-    /**
-     * This function is automatically called as soon the Transition starts
-     * this.newContainerLoading is a Promise for the loading of the new container
-     * (Barba.js also comes with an handy Promise polyfill!)
-     */
-
-    // As soon the loading is finished and the old page is faded out, let's fade the new page
-    Promise
-      .all([this.newContainerLoading, this.fadeOut()])
-      .then(this.fadeIn.bind(this));
-  },
-
-  fadeOut: function() {
-    /**
-     * this.oldContainer is the HTMLElement of the old Container
-     */
-
-    return $(this.oldContainer).animate({ opacity: 0 }).promise();
-  },
-
-  fadeIn: function() {
-    /**
-     * this.newContainer is the HTMLElement of the new Container
-     * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
-     * Please note, newContainer is available just after newContainerLoading is resolved!
-     */
-
-    var _this = this;
-    var $el = $(this.newContainer);
-
-    $(this.oldContainer).hide();
-
-    $el.css({
-      visibility : 'visible',
-      opacity : 0
-    });
-
-    $el.animate({ opacity: 1 }, 400, function() {
+  Barba.Pjax.start();
+  var FadeTransition = Barba.BaseTransition.extend({
+    start: function() {
       /**
-       * Do not forget to call .done() as soon your transition is finished!
-       * .done() will automatically remove from the DOM the old Container
+       * This function is automatically called as soon the Transition starts
+       * this.newContainerLoading is a Promise for the loading of the new container
+       * (Barba.js also comes with an handy Promise polyfill!)
        */
 
-      _this.done();
-    });
-  }
-});
+      // As soon the loading is finished and the old page is faded out, let's fade the new page
+      Promise
+        .all([this.newContainerLoading, this.fadeOut()])
+        .then(this.fadeIn.bind(this));
+    },
 
-/**
- * Next step, you have to tell Barba to use the new Transition
- */
+    fadeOut: function() {
+      /**
+       * this.oldContainer is the HTMLElement of the old Container
+       */
 
-Barba.Pjax.getTransition = function() {
+      return $(this.oldContainer).animate({ opacity: 0 }).promise();
+    },
+
+    fadeIn: function() {
+      /**
+       * this.newContainer is the HTMLElement of the new Container
+       * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+       * Please note, newContainer is available just after newContainerLoading is resolved!
+       */
+
+      var _this = this;
+      var $el = $(this.newContainer);
+
+      $(this.oldContainer).hide();
+
+      $el.css({
+        visibility : 'visible',
+        opacity : 0
+      });
+
+      $el.animate({ opacity: 1 }, 400, function() {
+        /**
+         * Do not forget to call .done() as soon your transition is finished!
+         * .done() will automatically remove from the DOM the old Container
+         */
+
+        _this.done();
+      });
+    }
+  });
   /**
-   * Here you can use your own logic!
-   * For example you can use different Transition based on the current page or link...
+   * Next step, you have to tell Barba to use the new Transition
    */
-
-  return FadeTransition;
-};
-        var glyphOutTl = new TimelineMax(),
+  Barba.Pjax.getTransition = function() {
+    /**
+     * Here you can use your own logic!
+     * For example you can use different Transition based on the current page or link...
+     */
+    return FadeTransition;
+  };
+        
+  
+  
+  
+  
+  
+  
+  
+            var glyphOutTl = new TimelineMax(),
             glyphInTl = new TimelineMax(),
             $flips = $('.flip'),
             $body = $('body');
@@ -89,7 +77,7 @@ Barba.Pjax.getTransition = function() {
         clearStage();
         function clearStage() {
             var clearTl = new TimelineMax(),
-                glyphActiveN = $('li.is-active').find('span').html();
+                glyphActiveN = $('.link.is-active').find('.count').html();
                 
             clearTl
               // .set($flip00, { transformOrigin: 'center center' })
@@ -98,14 +86,18 @@ Barba.Pjax.getTransition = function() {
             glyphIn(glyphActiveN);
             return clearTl;
         }
-        $('li').click(function () { 
+        $('.link:not(.is-disabled)').click(function () { 
+            // if(this.hasClass('is-disabled'))
+            // {
+            //   alert('is-disabled'); 
+            // }
             if($body.hasClass('is-animating'))
             {}
             else
             {
-              var o = $('li.is-active').find('span').html();
-              var i = $(this).find('span').html();
-              $('li.is-active').removeClass('is-active');
+              var o = $('.link.is-active').find('.count').html();
+              var i = $(this).find('.count').html();
+              $('.link.is-active').removeClass('is-active');
               $(this).addClass('is-active');
             }
             glyphOut(o, i);
@@ -126,6 +118,26 @@ Barba.Pjax.getTransition = function() {
             .to($(glyphInning), 1, { autoAlpha: 1, rotationY: 0, ease: Power4.easeInOut })
             .set($body, { className: '-=is-animating' });
         }
+
+
+
+
+  $('#gobackup').click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  }); 
+
+  
+  $('.themelist article').click(function () {
+    var themeN = null;
+    var themeTriggered = 'c' + $(this).find('.count').html();
+    //themeN = ($(this).find('.count').html());
+    //console.log(themeTriggered);
+    $('nav ul li:first-child').trigger('click');
+    return false;
+  }); 
+
+
 
           // var mainTl = new TimelineMax({ onUpdate: updateSlider, paused: true }),
           //   $text = $('p'),

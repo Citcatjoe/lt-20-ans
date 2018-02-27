@@ -7,6 +7,33 @@
   box-sizing: border-box; }
 
 /*Boxes settings*/
+nav ul li.c00:hover, nav ul li.c00.is-active {
+  color: #930025; }
+
+nav ul li.c01:hover, nav ul li.c01.is-active {
+  color: #930025; }
+
+nav ul li.c02:hover, nav ul li.c02.is-active {
+  color: #d32e64; }
+
+nav ul li.c03:hover, nav ul li.c03.is-active {
+  color: #a400b3; }
+
+nav ul li.c04:hover, nav ul li.c04.is-active {
+  color: #004da6; }
+
+nav ul li.c05:hover, nav ul li.c05.is-active {
+  color: #00a6a3; }
+
+nav ul li.c06:hover, nav ul li.c06.is-active {
+  color: #00a666; }
+
+nav ul li.c07:hover, nav ul li.c07.is-active {
+  color: #2fb312; }
+
+nav ul li.is-disabled:hover {
+  color: initial !important; }
+
 .c00 .text-color {
   color: #930025; }
 
@@ -17,19 +44,19 @@
   color: #d32e64; }
 
 .c03 .text-color {
-  color: #930025; }
+  color: #a400b3; }
 
 .c04 .text-color {
-  color: #930025; }
+  color: #004da6; }
 
 .c05 .text-color {
-  color: #930025; }
+  color: #00a6a3; }
 
 .c06 .text-color {
-  color: #930025; }
+  color: #00a666; }
 
 .c07 .text-color {
-  color: #930025; }
+  color: #2fb312; }
 
 html {
   font-size: 16px; }
