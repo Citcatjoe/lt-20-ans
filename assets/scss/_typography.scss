@@ -133,8 +133,10 @@ h2 {
 }
 
 h3 {
-	font-size: modular-scale(3);
-    line-height: 1.25;
+	font-family: $font-title;
+	font-size: modular-scale(6);
+	line-height: 1.2;
+	margin: -15px 0 30px 0;
 }
 
 h4 {
@@ -160,6 +162,11 @@ h6 {
 	-webkit-font-smoothing: antialiased; 
 	-moz-osx-font-smoothing: grayscale; 
 	text-rendering: optimizeLegibility;
+
+	span 
+	{
+		font-weight: lighter;
+	}
 }
 .barba-container h6 
 {

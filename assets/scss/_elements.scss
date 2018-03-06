@@ -206,7 +206,8 @@ footer
     list-style: none;
     padding: 0;
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    //margin-left: -55px;
 
     &:before 
     {
@@ -215,18 +216,100 @@ footer
         position: absolute;
         content: " ";
         width: 3px;
-        background-color: #eeeeee;
-        left: 0;
+        //background-color: #eeeeee;
+        left: -55px;
+        border-radius: 5px;
         //margin-left: -1.5px;
     }
 
-    li 
+    .timeline-entry
     {
+        padding-top: 10px;
         margin-bottom: 60px;
         position: relative;
-        width: 50%;
-        float: right;
+        //width: 50%;
+        // float: right;
         clear: right;
+        //padding-left: 55px;
+        //background:rgba(0, 0, 0, .1);
+        overflow: visible;
+
+        .timeline-entry-dot
+        {
+            position: relative;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            //border: 3px solid;
+            background: white;
+            left: -55px;
+            top: -10px;
+            transform: translate(-42%, -42%);
+            
+        }
+
+        .timeline-entry-date
+        {
+            background: white;
+            padding: 8px 0;
+        }
+
+        .timeline-entry-infos
+        {
+            position: relative;
+            font-family: $font-title;
+            font-size: 10px;
+            line-height: 12px;
+            //margin-bottom: 40px;
+
+            .timeline-entry-infos-triangle
+            {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                transform: translate(-50%, -30%) rotate(45deg);
+                background: white; 
+                left: -53px;
+                //border-radius: 0 10px 0 0;
+                // @include triangle("right", 2rem, 2rem, #b25c9c);
+                // content: "";
+
+                
+            }
+        }
+
+        .video-wrapper 
+        {
+           
+            margin-left: -145px;
+            margin-right: -145px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background: white;
+
+            .video-wrapper-container
+            {
+                background: gray;
+                width: 100%;
+                height: 400px;
+
+                
+            }
+
+            .video-wrapper-footer
+            {
+                width: 100%;
+                color: white;
+                font-family: $font-title;
+                text-transform: uppercase;
+                font-size: 10px;
+                padding: 0 5px;
+                letter-spacing: 1px;
+                font-weight: lighter;
+            }
+
+            
+        }
     }
 }
 

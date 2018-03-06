@@ -40,6 +40,44 @@ nav ul li.is-disabled:hover {  color: initial !important;}
 .c06 .text-color { color: $color06; }
 .c07 .text-color { color: $color07; }
 
+.c00 .background-color { background-color: $color00; }
+.c01 .background-color { background-color: $color01; }
+.c02 .background-color { background-color: $color02; }
+.c03 .background-color { background-color: $color03; }
+.c04 .background-color { background-color: $color04; }
+.c05 .background-color { background-color: $color05; }
+.c06 .background-color { background-color: $color06; }
+.c07 .background-color { background-color: $color07; }
+
+.c00 .timeline:before { background-color: $color00; }
+.c01 .timeline:before { background-color: $color01; }
+.c02 .timeline:before { background-color: $color02; }
+.c03 .timeline:before { background-color: $color03; }
+.c04 .timeline:before { background-color: $color04; }
+.c05 .timeline:before { background-color: $color05; }
+.c06 .timeline:before { background-color: $color06; }
+.c07 .timeline:before { background-color: $color07; }
+
+.c00 .timeline .timeline-entry-dot { border: 3px solid $color00; }
+.c01 .timeline .timeline-entry-dot { border: 3px solid $color01; }
+.c02 .timeline .timeline-entry-dot { border: 3px solid $color02; }
+.c03 .timeline .timeline-entry-dot { border: 3px solid $color03; }
+.c04 .timeline .timeline-entry-dot { border: 3px solid $color04; }
+.c05 .timeline .timeline-entry-dot { border: 3px solid $color05; }
+.c06 .timeline .timeline-entry-dot { border: 3px solid $color06; }
+.c07 .timeline .timeline-entry-dot { border: 3px solid $color07; }
+
+.c00 .timeline .triangle { border-top: 3px solid $color00; border-right: 3px solid $color00; }
+.c01 .timeline .triangle { border-top: 3px solid $color01; border-right: 3px solid $color01; }
+.c02 .timeline .triangle { border-top: 3px solid $color02; border-right: 3px solid $color02; }
+.c03 .timeline .triangle { border-top: 3px solid $color03; border-right: 3px solid $color03; }
+.c04 .timeline .triangle { border-top: 3px solid $color04; border-right: 3px solid $color04; }
+.c05 .timeline .triangle { border-top: 3px solid $color05; border-right: 3px solid $color05; }
+.c06 .timeline .triangle { border-top: 3px solid $color06; border-right: 3px solid $color06; }
+.c07 .timeline .triangle { border-top: 3px solid $color07; border-right: 3px solid $color07; }
+
+
+
 //=====================================================================//
 // BREAKPOINTS (BOOTSTRAP)
 //=====================================================================//

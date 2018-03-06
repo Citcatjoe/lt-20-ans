@@ -82,6 +82,110 @@ nav ul li.is-disabled:hover {
 .c07 .text-color {
   color: #2fb312; }
 
+.c00 .background-color {
+  background-color: #930025; }
+
+.c01 .background-color {
+  background-color: #930025; }
+
+.c02 .background-color {
+  background-color: #d32e64; }
+
+.c03 .background-color {
+  background-color: #a400b3; }
+
+.c04 .background-color {
+  background-color: #004da6; }
+
+.c05 .background-color {
+  background-color: #00a6a3; }
+
+.c06 .background-color {
+  background-color: #00a666; }
+
+.c07 .background-color {
+  background-color: #2fb312; }
+
+.c00 .timeline:before {
+  background-color: #930025; }
+
+.c01 .timeline:before {
+  background-color: #930025; }
+
+.c02 .timeline:before {
+  background-color: #d32e64; }
+
+.c03 .timeline:before {
+  background-color: #a400b3; }
+
+.c04 .timeline:before {
+  background-color: #004da6; }
+
+.c05 .timeline:before {
+  background-color: #00a6a3; }
+
+.c06 .timeline:before {
+  background-color: #00a666; }
+
+.c07 .timeline:before {
+  background-color: #2fb312; }
+
+.c00 .timeline .timeline-entry-dot {
+  border: 3px solid #930025; }
+
+.c01 .timeline .timeline-entry-dot {
+  border: 3px solid #930025; }
+
+.c02 .timeline .timeline-entry-dot {
+  border: 3px solid #d32e64; }
+
+.c03 .timeline .timeline-entry-dot {
+  border: 3px solid #a400b3; }
+
+.c04 .timeline .timeline-entry-dot {
+  border: 3px solid #004da6; }
+
+.c05 .timeline .timeline-entry-dot {
+  border: 3px solid #00a6a3; }
+
+.c06 .timeline .timeline-entry-dot {
+  border: 3px solid #00a666; }
+
+.c07 .timeline .timeline-entry-dot {
+  border: 3px solid #2fb312; }
+
+.c00 .timeline .triangle {
+  border-top: 3px solid #930025;
+  border-right: 3px solid #930025; }
+
+.c01 .timeline .triangle {
+  border-top: 3px solid #930025;
+  border-right: 3px solid #930025; }
+
+.c02 .timeline .triangle {
+  border-top: 3px solid #d32e64;
+  border-right: 3px solid #d32e64; }
+
+.c03 .timeline .triangle {
+  border-top: 3px solid #a400b3;
+  border-right: 3px solid #a400b3; }
+
+.c04 .timeline .triangle {
+  border-top: 3px solid #004da6;
+  border-right: 3px solid #004da6; }
+
+.c05 .timeline .triangle {
+  border-top: 3px solid #00a6a3;
+  border-right: 3px solid #00a6a3; }
+
+.c06 .timeline .triangle {
+  border-top: 3px solid #00a666;
+  border-right: 3px solid #00a666; }
+
+.c07 .timeline .triangle {
+  border-top: 3px solid #2fb312;
+  border-right: 3px solid #2fb312; }
+
 html {
   font-size: 16px; }
 
@@ -164,8 +268,10 @@ h2 {
   hyphens: auto; }
 
 h3 {
-  font-size: 1.953125em;
-  line-height: 1.25; }
+  font-family: "Apercu";
+  font-size: 3.8146972656em;
+  line-height: 1.2;
+  margin: -15px 0 30px 0; }
 
 h4 {
   font-size: 2.44140625em;
@@ -188,6 +294,8 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
+  h6 span {
+    font-weight: lighter; }
 
 .barba-container h6 {
   margin-left: -108px; }
@@ -365,21 +473,64 @@ footer ul {
   list-style: none;
   padding: 0;
   position: relative;
-  overflow: auto; }
+  overflow: visible; }
   .timeline:before {
     top: 0;
     bottom: 0;
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #eeeeee;
-    left: 0; }
-  .timeline li {
+    left: -55px;
+    border-radius: 5px; }
+  .timeline .timeline-entry {
+    padding-top: 10px;
     margin-bottom: 60px;
     position: relative;
-    width: 50%;
-    float: right;
-    clear: right; }
+    clear: right;
+    overflow: visible; }
+    .timeline .timeline-entry .timeline-entry-dot {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: white;
+      left: -55px;
+      top: -10px;
+      transform: translate(-42%, -42%); }
+    .timeline .timeline-entry .timeline-entry-date {
+      background: white;
+      padding: 8px 0; }
+    .timeline .timeline-entry .timeline-entry-infos {
+      position: relative;
+      font-family: "Apercu";
+      font-size: 10px;
+      line-height: 12px; }
+      .timeline .timeline-entry .timeline-entry-infos .timeline-entry-infos-triangle {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        transform: translate(-50%, -30%) rotate(45deg);
+        background: white;
+        left: -53px; }
+    .timeline .timeline-entry .video-wrapper {
+      margin-left: -145px;
+      margin-right: -145px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background: white; }
+      .timeline .timeline-entry .video-wrapper .video-wrapper-container {
+        background: gray;
+        width: 100%;
+        height: 400px; }
+      .timeline .timeline-entry .video-wrapper .video-wrapper-footer {
+        width: 100%;
+        color: white;
+        font-family: "Apercu";
+        text-transform: uppercase;
+        font-size: 10px;
+        padding: 0 5px;
+        letter-spacing: 1px;
+        font-weight: lighter; }
 
 .spacer-md {
   width: 100%;
