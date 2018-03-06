@@ -2,6 +2,8 @@
 //=====================================================================//
 // COLORS
 //=====================================================================//
+$colorTwitter: #4e9dee;
+
 $color00: #930025;  
 $color01: #930025; 
 $color02: #d32e64; 
@@ -76,7 +78,14 @@ nav ul li.is-disabled:hover {  color: initial !important;}
 .c06 .timeline .triangle { border-top: 3px solid $color06; border-right: 3px solid $color06; }
 .c07 .timeline .triangle { border-top: 3px solid $color07; border-right: 3px solid $color07; }
 
-
+.c00 .timeline .owl-theme .owl-dots .owl-dot.active span, .c00 .timeline  .owl-theme .owl-dots .owl-dot:hover span { background: $color00; }
+.c01 .timeline .owl-theme .owl-dots .owl-dot.active span, .c01 .timeline  .owl-theme .owl-dots .owl-dot:hover span { background: $color01; }
+.c02 .timeline .owl-theme .owl-dots .owl-dot.active span, .c02 .timeline  .owl-theme .owl-dots .owl-dot:hover span { background: $color02; }
+.c03 .timeline .owl-theme .owl-dots .owl-dot.active span, .c03 .timeline  .owl-theme .owl-dots .owl-dot:hover span { background: $color03; }
+.c04 .timeline .owl-theme .owl-dots .owl-dot.active span, .c04 .timeline  .owl-theme .owl-dots .owl-dot:hover span { background: $color04; }
+.c05 .timeline .owl-theme .owl-dots .owl-dot.active span, .c05 .timeline  .owl-theme .owl-dots .owl-dot:hover span { background: $color05; }
+.c06 .timeline .owl-theme .owl-dots .owl-dot.active span, .c06 .timeline  .owl-theme .owl-dots .owl-dot:hover span { background: $color06; }
+.c07 .timeline .owl-theme .owl-dots .owl-dot.active span, .c07 .timeline  .owl-theme .owl-dots .owl-dot:hover span { background: $color07; }
 
 //=====================================================================//
 // BREAKPOINTS (BOOTSTRAP)

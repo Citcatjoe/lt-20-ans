@@ -1,6 +1,24 @@
 jQuery(document).ready(function($) {
 
     $('.overlay').fadeOut('slow');
+
+    $('.slider').owlCarousel({
+        //loop: true,
+        loop: true,
+        margin: 0,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
     
     Barba.Pjax.start();
     var FadeTransition = Barba.BaseTransition.extend({

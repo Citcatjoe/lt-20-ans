@@ -186,6 +186,30 @@ nav ul li.is-disabled:hover {
   border-top: 3px solid #2fb312;
   border-right: 3px solid #2fb312; }
 
+.c00 .timeline .owl-theme .owl-dots .owl-dot.active span, .c00 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #930025; }
+
+.c01 .timeline .owl-theme .owl-dots .owl-dot.active span, .c01 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #930025; }
+
+.c02 .timeline .owl-theme .owl-dots .owl-dot.active span, .c02 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #d32e64; }
+
+.c03 .timeline .owl-theme .owl-dots .owl-dot.active span, .c03 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #a400b3; }
+
+.c04 .timeline .owl-theme .owl-dots .owl-dot.active span, .c04 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #004da6; }
+
+.c05 .timeline .owl-theme .owl-dots .owl-dot.active span, .c05 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #00a6a3; }
+
+.c06 .timeline .owl-theme .owl-dots .owl-dot.active span, .c06 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #00a666; }
+
+.c07 .timeline .owl-theme .owl-dots .owl-dot.active span, .c07 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #2fb312; }
+
 html {
   font-size: 16px; }
 
@@ -228,6 +252,13 @@ img {
   font-weight: 300;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Rooney';
+  src: url("../fonts/rooney_bold.eot");
+  src: url("../fonts/rooney_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/rooney_bold.woff") format("woff"), url("../fonts/rooney_bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -235,16 +266,24 @@ a {
     border-bottom-color: transparent;
     text-decoration: underline; }
 
+.timeline a {
+  color: #930025; }
+  .timeline a:hover {
+    text-decoration: underline; }
+
+strong, b {
+  font-weight: 600; }
+
 p {
   font-family: "Rooney";
   font-size: 15px;
   max-width: 450px;
   line-height: 1.6;
-  margin-bottom: 35px; }
-  p.margin1 {
-    margin-left: 215px; }
-  p.margin2 {
-    margin-left: 110px; }
+  margin-bottom: 35px;
+  font-weight: 100; }
+
+.timeline p {
+  max-width: initial; }
 
 h1 {
   position: relative;
@@ -299,6 +338,35 @@ h6 {
 
 .barba-container h6 {
   margin-left: -108px; }
+
+blockquote {
+  font-family: "Apercu";
+  font-weight: 600;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  padding: 0 50px;
+  position: relative;
+  margin: 70px 0; }
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: rgba(0, 0, 0, 0.075);
+    font-family: Georgia; }
+  blockquote:after {
+    position: absolute;
+    content: "\201D";
+    font-size: 80px;
+    bottom: 0;
+    right: 0;
+    margin-right: -0.6em;
+    margin-bottom: -0.8em;
+    color: rgba(0, 0, 0, 0.075);
+    font-family: Georgia; }
 
 .date {
   font-family: "Rooney";
@@ -398,6 +466,7 @@ nav ul {
       color: #930025; }
     nav ul li.is-disabled {
       font-family: "Rooney";
+      font-weight: 100;
       font-size: 14px;
       padding-top: 3px;
       font-style: italic; }
@@ -506,13 +575,15 @@ footer ul {
       font-size: 10px;
       line-height: 12px;
       margin-bottom: 40px; }
-      .timeline .timeline-entry .timeline-entry-infos .timeline-entry-infos-triangle {
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        transform: translate(-50%, -30%) rotate(45deg);
-        background: white;
-        left: -53px; }
+    .timeline .timeline-entry .triangle {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      transform: translate(-50%, -30%) rotate(45deg);
+      background: white;
+      left: -53px; }
+    .timeline .timeline-entry h2 .triangle {
+      transform: translate(-50%, 30%) rotate(45deg); }
     .timeline .timeline-entry .video-wrapper {
       margin-left: -145px;
       margin-right: -145px;
@@ -523,19 +594,67 @@ footer ul {
         background: gray;
         width: 100%;
         height: 400px; }
-      .timeline .timeline-entry .video-wrapper .video-wrapper-footer {
-        width: 100%;
-        color: white;
-        font-family: "Apercu";
-        text-transform: uppercase;
-        font-size: 10px;
-        padding: 0 5px;
-        letter-spacing: 1px;
-        font-weight: lighter; }
+
+.caption {
+  width: 100%;
+  color: white;
+  font-family: "Apercu";
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 0 5px;
+  letter-spacing: 1px;
+  font-weight: lighter; }
+
+.slider {
+  margin-bottom: 50px; }
+
+.img-wrapper {
+  margin-bottom: 50px; }
 
 .spacer-md {
   width: 100%;
   height: 40px; }
+
+.margin1 {
+  margin-left: 215px; }
+
+.margin2 {
+  margin-left: 110px; }
+
+.author {
+  overflow: auto;
+  border-top: 2px dashed rgba(0, 0, 0, 0.075);
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.075);
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin-top: 80px;
+  max-width: 450px; }
+  .author .author-picture {
+    width: 110px;
+    float: left; }
+  .author .author-bio {
+    width: calc(100% - 110px);
+    padding-left: 15px;
+    padding-top: 5px;
+    float: left; }
+    .author .author-bio .author-bio-name {
+      font-family: "Apercu";
+      display: block;
+      font-weight: 600;
+      font-size: 22px; }
+    .author .author-bio .author-bio-twitter {
+      font-family: "Rooney";
+      color: #4e9dee;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 20px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility; }
+    .author .author-bio .author-bio-desc {
+      font-family: "Rooney";
+      font-style: italic;
+      font-size: 14px; }
 
 .brand-nav {
   display: none; }
