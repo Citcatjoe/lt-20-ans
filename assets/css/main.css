@@ -159,7 +159,9 @@ h2 {
   font-size: 35px;
   margin-top: 45px;
   line-height: 1.1;
-  font-family: "Apercu"; }
+  font-family: "Apercu";
+  max-width: 530px;
+  hyphens: auto; }
 
 h3 {
   font-size: 1.953125em;
@@ -358,6 +360,26 @@ footer ul {
     height: 100%;
     margin-right: 25px;
     padding-top: 19px; }
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  overflow: auto; }
+  .timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 0; }
+  .timeline li {
+    margin-bottom: 60px;
+    position: relative;
+    width: 50%;
+    float: right;
+    clear: right; }
 
 .spacer-md {
   width: 100%;
