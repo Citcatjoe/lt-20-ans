@@ -504,7 +504,8 @@ footer ul {
       position: relative;
       font-family: "Apercu";
       font-size: 10px;
-      line-height: 12px; }
+      line-height: 12px;
+      margin-bottom: 40px; }
       .timeline .timeline-entry .timeline-entry-infos .timeline-entry-infos-triangle {
         position: absolute;
         width: 18px;
