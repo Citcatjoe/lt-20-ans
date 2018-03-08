@@ -656,6 +656,28 @@ footer ul {
       font-style: italic;
       font-size: 14px; }
 
+.related .related-title {
+  font-family: "Rooney";
+  font-weight: 600;
+  margin: 45px 0 50px 0;
+  display: block; }
+
+.related .related-list {
+  list-style: none;
+  padding: 0; }
+  .related .related-list .related-list-item {
+    margin-bottom: 35px; }
+    .related .related-list .related-list-item .related-list-item-title {
+      font-family: "Apercu";
+      display: block;
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 5px; }
+    .related .related-list .related-list-item .related-list-item-subtitle {
+      font-family: "Rooney";
+      color: #930025;
+      font-style: italic; }
+
 .brand-nav {
   display: none; }
 

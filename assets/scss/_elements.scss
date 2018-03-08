@@ -393,3 +393,42 @@ footer
         }
     }
 }
+
+.related
+{
+    .related-title
+    {
+        font-family: $font-text;
+        font-weight: 600;
+        margin: 45px 0 50px 0;
+        display: block;
+    }
+
+    .related-list
+    {
+        list-style: none;
+        padding: 0;
+
+        .related-list-item
+        {
+            margin-bottom: 35px;
+
+            
+            .related-list-item-title
+            {
+                font-family: $font-title;
+                display: block;
+                font-weight: 600;
+                font-size: 22px;
+                margin-bottom: 5px;
+            }
+
+            .related-list-item-subtitle
+            {
+                font-family: $font-text;
+                color: $color00;
+                font-style: italic;
+            }
+        }
+    }
+}

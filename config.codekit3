@@ -7,7 +7,7 @@
 		"uuidString": "605AE066-04FD-43AB-A7E9-DE086B40AE0A"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/00.html.twig": {
 		"cB": 0,
@@ -78,17 +78,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/_prod\/Capture d’écran 2018-03-06 à 13.34.52.png": {
-		"ft": 32768,
-		"iS": 364115,
-		"oA": 0,
-		"oAP": "\/_prod\/Capture d’écran 2018-03-06 à 13.34.52.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/_prod\/LeTemps_gamme_couleur.pdf": {
 		"cB": 0,
 		"ft": 8192,
@@ -120,26 +109,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/assets\/css\/normalize-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/css\/owl.carousel.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/owl.carousel.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/css\/owl.theme.default.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/owl.theme.default.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -246,37 +215,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/apercu-regular.woff2",
-		"oF": 0
-		},
-	"\/assets\/fonts\/rooney_bold.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/rooney_bold.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/rooney_bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/rooney_bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/fonts\/rooney_bold.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/rooney_bold.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/rooney_bold.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/rooney_bold.woff",
 		"oF": 0
 		},
 	"\/assets\/fonts\/rooney_light.eot": {
@@ -467,16 +405,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/main-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/owl.carousel.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/owl.carousel.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1598,16 +1526,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/catherine-f.jpg": {
-		"ft": 16384,
-		"iS": 3533,
-		"oA": 0,
-		"oAP": "\/img\/catherine-f.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/img\/checkbox-checked.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1871,11 +1789,11 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/indexH.php": {
+	"\/indexLT.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/indexH.php",
+		"oAP": "\/indexLT.php",
 		"oF": 0
 		},
 	"\/json\/data.json": {
