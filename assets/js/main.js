@@ -2,6 +2,10 @@ jQuery(document).ready(function($) {
 
     $('.overlay').fadeOut('slow');
 
+    $('.menu-toggle').click(function () {
+        $('aside').toggleClass('is-visible');
+    }); 
+
     $('.slider').owlCarousel({
         //loop: true,
         loop: true,

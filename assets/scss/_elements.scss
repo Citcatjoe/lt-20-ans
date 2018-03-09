@@ -14,6 +14,7 @@
     left: 35px;
     width: 165px; // anciennement 215
     height: auto;
+    z-index: 11;
 }
 
 #glyph-big    
@@ -51,6 +52,19 @@
     top: 50%;
     transform: translateY(-50%);
 } 
+
+.menu-toggle
+{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    top: 35px;
+    right: 35px;
+    display: none;
+    z-index: 11;
+    cursor: pointer;
+
+}
 
 nav 
 {
@@ -142,6 +156,8 @@ nav
             font-size: 0.75rem;
             font-family: $font-text;
             //  vertical-align: baseline;
+
+            a { color: $color00; }
         }
     }
 }
@@ -431,4 +447,9 @@ footer
             }
         }
     }
+}
+
+.flip 
+{
+    z-index: 15;
 }

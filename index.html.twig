@@ -18,6 +18,19 @@
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/TextPlugin.min.js"></script> -->
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+		{% block metas %}
+		<meta property="og:title" content="Donald Trump impose la pax americana" />
+		<meta property="og:image" content="{{ app.base_url }}/social.jpg" />
+		<meta property="og:url" content="{{ app.url }}" />
+		<meta property="og:description" content="Le président américain a signé le décret imposant des droits de douane sur l&#039;acier et l&#039;aluminium à l&#039;importation. Mais il a aussi laissé les portes ouvertes à ses partenaires qui voudraient négocier des exemptions" />
+		<meta property="og:type" content="article" />
+		<meta name="twitter:image" content="{{ app.base_url }}/social.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@letemps" />
+		<meta name="twitter:title" content="Donald Trump impose la pax americana" />
+		<meta name="twitter:description" content="Le président américain a signé le décret imposant des droits de douane sur l&#039;acier et l&#039;aluminium à l&#039;importation. Mais il a aussi laissé les portes ouvertes à ses partenaires qui voudraient négocier des exemptions" />
+		<link rel="image_src" href="{{ app.base_url }}/social.jpg" />
+		{% endblock %}
 		
 	</head>   
  
@@ -31,6 +44,7 @@
 			</div> -->
 		</div> 
 
+		<a href="https://www.letemps.ch" target="_blank"><img src="img/logo-lt-rouge.svg" alt="logo Le Temps" id="logo-lt-header"></a>
 		<img src="img/glyph-00.svg" alt="" id="glyph-big" class="flip flip-00">	
 		<img src="img/glyph-01.svg" alt="" id="glyph-big" class="flip flip-01">	
 		<img src="img/glyph-02.svg" alt="" id="glyph-big" class="flip flip-02">
@@ -39,20 +53,21 @@
 		<img src="img/glyph-05.svg" alt="" id="glyph-big" class="flip flip-05"> 
 		<img src="img/glyph-06.svg" alt="" id="glyph-big" class="flip flip-06">
 		<img src="img/glyph-07.svg" alt="" id="glyph-big" class="flip flip-07">
+		<img src="img/menu.svg" alt="" class="menu-toggle menu-icon">
 
 		<aside>
-			<a href="https://www.letemps.ch" target="_blank"><img src="img/logo-lt-rouge.svg" alt="logo Le Temps" id="logo-lt-header"></a>
+			
 			<h6>Navigation</h6>
 			<nav>
 				<ul> 
 					<li class="link {% if active_page == '00' %}is-active{% endif %} c00"><span class="count">00</span><a href="?page=00">Le Temps de s'engager</a></li>
-					<li class="link {% if active_page == '01' %}is-active{% endif %} c01"><span class="count">01</span>Journalisme</li>
-					<li class="link {% if active_page == '02' %}is-active{% endif %} c02"><span class="count">02</span><a href="?page=02">Égalité hommes-femmes</a></li>
-					<li class="link is-disabled c03"><span class="count">03</span>—  (19 mai - 16 juin)</li>
-					<li class="link is-disabled c04"><span class="count">04</span>—  (19 mai - 16 juin)</li>
-					<li class="link is-disabled c05"><span class="count">05</span>—  (19 mai - 16 juin)</li>
-					<li class="link is-disabled c06"><span class="count">06</span>—  (19 mai - 16 juin)</li> 
-					<li class="link is-disabled c07"><span class="count">07</span>— (19 mai - 16 juin)</li>
+					<li class="link {% if active_page == '01' %}is-active{% endif %} c01"><span class="count">01</span><a href="?page=01">Journalisme</a></li>
+					<li class="link is-disabled c02"><span class="count">02</span>—  (Dès le 16 avril)</li>
+					<li class="link is-disabled c03"><span class="count">03</span>—  (Dès le 21 mai)</li>
+					<li class="link is-disabled c04"><span class="count">04</span>—  (Dès le 18 juin)</li>
+					<li class="link is-disabled c05"><span class="count">05</span>—  (Dès le 20 août)</li>
+					<li class="link is-disabled c06"><span class="count">06</span>—  (Dès le 17 septembre)</li> 
+					<li class="link is-disabled c07"><span class="count">07</span>—  (Dès le 15 octobre)</li>
 				</ul>
 			</nav>
 			<div class="aside--footer">
@@ -72,7 +87,7 @@
 						<a href="https://www.youtube.com/letemps" target="_blank"><i class="fa fa-youtube"></i></a>
 					</span>
 					<span class="follow--text">
-						Engagez-vous également en soutenant la presse de qualité
+						<span>Engagez-vous également:</span><br><a href="https://www.letemps.ch/abos" target="_blank">Soutenez une presse de qualité</a> 
 					</span>
 				</div>
 			</div>

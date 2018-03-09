@@ -1,4 +1,17 @@
 {% extends "index.html.twig" %}
+{% block metas %}
+<meta property="og:title" content="Donald Trump impose la pax americana" />
+<meta property="og:image" content="{{ app.base_url }}/social.jpg" />
+<meta property="og:url" content="{{ app.url }}" />
+<meta property="og:description" content="Le président américain a signé le décret imposant des droits de douane sur l&#039;acier et l&#039;aluminium à l&#039;importation. Mais il a aussi laissé les portes ouvertes à ses partenaires qui voudraient négocier des exemptions" />
+<meta property="og:type" content="article" />
+<meta name="twitter:image" content="{{ app.base_url }}/social.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@letemps" />
+<meta name="twitter:title" content="Donald Trump impose la pax americana" />
+<meta name="twitter:description" content="Le président américain a signé le décret imposant des droits de douane sur l&#039;acier et l&#039;aluminium à l&#039;importation. Mais il a aussi laissé les portes ouvertes à ses partenaires qui voudraient négocier des exemptions" />
+<link rel="image_src" href="{{ app.base_url }}/social.jpg" />
+{% endblock %}
 {% block container %}
 <div class="barba-container">
     <div class="c00">
@@ -19,7 +32,7 @@
                 <h5>Journalisme</h5>
                 <span class="date">— (16 mars - 15 avril)</span>
             </article>
-            <article class="margin1 c02">
+            <article class="margin1 c02 is-disabled">
                 <span class="count">02</span>
                 <h5>Égalité<br>Homme-Femme</h5>
                 <span class="date">— (16 avril - 18 mai)</span>
