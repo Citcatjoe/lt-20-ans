@@ -13,6 +13,8 @@ $color05: #00a6a3;
 $color06: #00a666; 
 $color07: #2fb312;   
 
+// .overlay { background: $color00; } 
+
 nav ul li.c00:hover, nav ul li.c00.is-active { color: $color00; } 
 nav ul li.c01:hover, nav ul li.c01.is-active { color: $color01; } 
 nav ul li.c02:hover, nav ul li.c02.is-active { color: $color02; } 
@@ -24,14 +26,14 @@ nav ul li.c07:hover, nav ul li.c07.is-active { color: $color07; }
 
 nav ul li.is-disabled:hover {  color: initial !important;}  
 
-.themelist article.c00:hover h5, .themelist article.c00:active h5 { color: $color00; } // n'existe pas mais voilà
-.themelist article.c01:hover h5, .themelist article.c01:active h5 { color: $color01; }
-.themelist article.c02:hover h5, .themelist article.c02:active h5 { color: $color02; }
-.themelist article.c03:hover h5, .themelist article.c03:active h5 { color: $color03; }
-.themelist article.c04:hover h5, .themelist article.c04:active h5 { color: $color04; }
-.themelist article.c05:hover h5, .themelist article.c05:active h5 { color: $color05; }
-.themelist article.c06:hover h5, .themelist article.c06:active h5 { color: $color06; }
-.themelist article.c07:hover h5, .themelist article.c07:active h5 { color: $color07; }
+.themelist article.c00:not(.is-disabled):hover h5, .themelist article.c00:active h5 { color: $color00; } // n'existe pas mais voilà
+.themelist article.c01:not(.is-disabled):hover h5, .themelist article.c01:active h5 { color: $color01; }
+.themelist article.c02:not(.is-disabled):hover h5, .themelist article.c02:active h5 { color: $color02; }
+.themelist article.c03:not(.is-disabled):hover h5, .themelist article.c03:active h5 { color: $color03; }
+.themelist article.c04:not(.is-disabled):hover h5, .themelist article.c04:active h5 { color: $color04; }
+.themelist article.c05:not(.is-disabled):hover h5, .themelist article.c05:active h5 { color: $color05; }
+.themelist article.c06:not(.is-disabled):hover h5, .themelist article.c06:active h5 { color: $color06; }
+.themelist article.c07:not(.is-disabled):hover h5, .themelist article.c07:active h5 { color: $color07; }
 
 .c00 .text-color { color: $color00; }
 .c01 .text-color { color: $color01; }

@@ -605,8 +605,16 @@
         {
             
 
-            &.margin1 {margin-left: 50px;}
-            &.margin2 {margin-left: 50px;}
+            &.margin1 {margin-left: 40px;}
+            &.margin2 {margin-left: 40px;}
+
+           
+            .count 
+            {
+                font-size: 1.5em;
+                margin-bottom: 40px;
+            }
+            
         }
     }
 
@@ -622,9 +630,39 @@
         }
     }
 
+    h2 
+    {
+        font-size: 24px;
+    }
+
     h3 
     {
         font-size: modular-scale(3);
+    }
+
+    blockquote 
+    {
+        font-size: 26px;
+        padding: 0;
+        margin: 40px 0;
+        
+
+        &:before
+        {
+           
+            
+            left: -10px;
+            font-size: 60px;
+           
+        }
+
+        &:after 
+        {
+           
+            font-size: 60px;
+            right: 30px;
+           
+        }
     }
 
     .barba-container h6 
@@ -640,7 +678,7 @@
 
     #glyph-small
     {
-        left: 43%;
+        left: 42%;
         bottom: 200px;
         margin: auto;
     }
@@ -648,7 +686,73 @@
     .menu-toggle
     {
         top: 30px;
-        right: 50px;
+        right: 50px; 
 
     }
+
+    article
+    {
+        .count 
+        {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include breakpoint(xs) {   //450
+
+    aside 
+    {
+        padding: 95px 40px 35px 40px;
+    }
+
+    nav 
+    {
+        
+        ul 
+        {
+        
+            li 
+            {
+                text-align: center;
+                margin-left: -10px;
+                //position: relative;
+                //font-family: $font-title;
+                //font-weight: 600;
+                font-size: 16px;
+                //line-height: 1em;
+                min-height: 18px;
+                //margin-bottom: 15px;
+
+                // &.is-active 
+                // { 
+                //     color: $color00;
+                // }
+
+                &.is-disabled
+                {
+                //     font-family: $font-text;
+                //     font-weight: 100;
+                //     font-size: 14px;
+                    padding-top: 1px;
+                //     font-style: italic;
+                }
+
+                .count 
+                {
+                    position: initial;
+                    margin-right: 5px;
+
+                    left: -25px;
+                    top: 2px;
+                //     font-family: $font-title;
+                //     font-style: initial !important;
+                //     font-weight: 100;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
 }

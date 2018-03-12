@@ -40,13 +40,19 @@
 	<body style="padding-top: {{ navBarOffset }};">
 		{{ block('bar_brand') }}
 		
-		<!-- <div class="overlay">
-			<img class="logo-brand" src="img/logo-lt-blanc.svg" alt="">
+		<!-- <div class="overlay"> 
+			<img src="img/glyph-00.svg" alt="">
+			<div class="load-container">
+				<div class="load-container-bar"></div>
+			</div> -->
+
+			<!-- <img class="logo-brand" src="img/logo-lt-blanc.svg" alt="">
 			<div class="spinner">
 				<div class="double-bounce1"></div>
 				<div class="double-bounce2"></div>
-			</div>
-		</div>  -->
+			</div> -->
+
+		<!-- </div>  -->
 
 		<a href="https://www.letemps.ch" target="_blank"><img src="img/logo-lt-rouge.svg" alt="logo Le Temps" id="logo-lt-header"></a>
 		<img src="img/glyph-00.svg" alt="" id="glyph-big" class="flip flip-00">	
@@ -61,11 +67,10 @@
 		<img src="img/close.svg" alt="" class="menu-toggle close-icon">
 
 		<aside>
-			
 			<h6>Navigation</h6>
 			<nav>
 				<ul> 
-					<li class="link {% if active_page == '00' %}is-active{% endif %} c00"><span class="count">00</span><a href="?page=00">Le Temps de s'engager</a></li>
+					<li class="link {% if active_page == '00' or active_page is empty %}is-active{% endif %} c00"><span class="count">00</span><a href="?page=00">Le Temps de s'engager</a></li>
 					<li class="link {% if active_page == '01' %}is-active{% endif %} c01"><span class="count">01</span><a href="?page=01">Journalisme</a></li>
 					<li class="link is-disabled c02"><span class="count">02</span>—  (Dès le 16 avril)</li>
 					<li class="link is-disabled c03"><span class="count">03</span>—  (Dès le 21 mai)</li>

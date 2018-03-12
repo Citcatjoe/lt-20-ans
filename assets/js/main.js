@@ -1,6 +1,12 @@
 jQuery(document).ready(function($) {
 
-    $('.overlay').fadeOut('slow');
+    // $('.overlay').fadeOut('slow');
+    
+    // var overlayTl = new TimelineMax(),
+    //     $overlay = $('.overlay');
+
+        // overlayTl
+        //     .to($overlay, 1, { autoAlpha: 0, ease: Power4.easeInOut});
 
     
 

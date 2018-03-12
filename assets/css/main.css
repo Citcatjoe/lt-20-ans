@@ -34,28 +34,28 @@ nav ul li.c07:hover, nav ul li.c07.is-active {
 nav ul li.is-disabled:hover {
   color: initial !important; }
 
-.themelist article.c00:hover h5, .themelist article.c00:active h5 {
+.themelist article.c00:not(.is-disabled):hover h5, .themelist article.c00:active h5 {
   color: #930025; }
 
-.themelist article.c01:hover h5, .themelist article.c01:active h5 {
+.themelist article.c01:not(.is-disabled):hover h5, .themelist article.c01:active h5 {
   color: #930025; }
 
-.themelist article.c02:hover h5, .themelist article.c02:active h5 {
+.themelist article.c02:not(.is-disabled):hover h5, .themelist article.c02:active h5 {
   color: #d32e64; }
 
-.themelist article.c03:hover h5, .themelist article.c03:active h5 {
+.themelist article.c03:not(.is-disabled):hover h5, .themelist article.c03:active h5 {
   color: #a400b3; }
 
-.themelist article.c04:hover h5, .themelist article.c04:active h5 {
+.themelist article.c04:not(.is-disabled):hover h5, .themelist article.c04:active h5 {
   color: #004da6; }
 
-.themelist article.c05:hover h5, .themelist article.c05:active h5 {
+.themelist article.c05:not(.is-disabled):hover h5, .themelist article.c05:active h5 {
   color: #00a6a3; }
 
-.themelist article.c06:hover h5, .themelist article.c06:active h5 {
+.themelist article.c06:not(.is-disabled):hover h5, .themelist article.c06:active h5 {
   color: #00a666; }
 
-.themelist article.c07:hover h5, .themelist article.c07:active h5 {
+.themelist article.c07:not(.is-disabled):hover h5, .themelist article.c07:active h5 {
   color: #2fb312; }
 
 .c00 .text-color {
@@ -410,11 +410,31 @@ footer {
   margin-top: -10px; }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: white;
   z-index: 100; }
+  .overlay img {
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .overlay .load-container {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #930025;
+    width: 150px;
+    height: 20px;
+    padding: 2px; }
+    .overlay .load-container .load-container-bar {
+      position: absolute;
+      height: 75%;
+      width: 142px;
+      background: #930025; }
 
 #logo-lt-header {
   position: absolute;
@@ -609,8 +629,7 @@ footer ul {
         padding-bottom: 56.25%;
         height: 0;
         overflow: auto;
-        max-width: 100%;
-        z-index: 999; }
+        max-width: 100%; }
         .timeline .timeline-entry .video-wrapper .video-wrapper-container iframe {
           position: absolute;
           top: 0;
@@ -881,29 +900,64 @@ footer ul {
     margin-left: -50px;
     margin-right: -50px; }
   .themelist article.margin1 {
-    margin-left: 50px; }
+    margin-left: 40px; }
   .themelist article.margin2 {
-    margin-left: 50px; }
+    margin-left: 40px; }
+  .themelist article .count {
+    font-size: 1.5em;
+    margin-bottom: 40px; }
   h1 {
     font-size: 2.5em; }
     h1 .count {
       margin-left: -38px;
       font-size: 60%;
       transform: translateY(14px); }
+  h2 {
+    font-size: 24px; }
   h3 {
     font-size: 1.953125em; }
+  blockquote {
+    font-size: 26px;
+    padding: 0;
+    margin: 40px 0; }
+    blockquote:before {
+      left: -10px;
+      font-size: 60px; }
+    blockquote:after {
+      font-size: 60px;
+      right: 30px; }
   .barba-container h6 {
     margin-left: -35px; }
   #logo-lt-header {
     left: 50px;
     width: 100px; }
   #glyph-small {
-    left: 43%;
+    left: 42%;
     bottom: 200px;
     margin: auto; }
   .menu-toggle {
     top: 30px;
-    right: 50px; } }
+    right: 50px; }
+  article .count {
+    font-size: 2em;
+    margin-bottom: 40px; } }
+
+@media (max-width: 450px) {
+  aside {
+    padding: 95px 40px 35px 40px; }
+  nav ul li {
+    text-align: center;
+    margin-left: -10px;
+    font-size: 16px;
+    min-height: 18px; }
+    nav ul li.is-disabled {
+      padding-top: 1px; }
+    nav ul li .count {
+      position: initial;
+      margin-right: 5px;
+      left: -25px;
+      top: 2px;
+      font-size: 13px; } }
 
 .brand-nav {
   display: none; }
