@@ -604,9 +604,19 @@ footer ul {
       padding-bottom: 15px;
       background: white; }
       .timeline .timeline-entry .video-wrapper .video-wrapper-container {
-        background: gray;
-        width: 100%;
-        height: 400px; }
+        background: white;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: auto;
+        max-width: 100%;
+        z-index: 999; }
+        .timeline .timeline-entry .video-wrapper .video-wrapper-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
 
 .caption {
   width: 100%;
@@ -735,9 +745,7 @@ footer ul {
     margin-left: -100px;
     margin-right: -50px; }
     .timeline .timeline-entry .video-wrapper .video-wrapper-container {
-      background: gray;
-      width: 100%;
-      height: 400px; }
+      background: white; }
   h1 {
     font-size: 4em; }
     h1 .count {
@@ -768,6 +776,20 @@ footer ul {
     width: 95px; } }
 
 @media (max-width: 768px) {
+  .menu-icon {
+    opacity: 1; }
+  .close-icon {
+    opacity: 0; }
+  body.menu-open .close-icon {
+    opacity: 1 !important; }
+  body.menu-open .menu-icon {
+    opacity: 0 !important; }
+  body.menu-open aside {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.250s; }
   aside {
     visibility: hidden;
     opacity: 0;
@@ -777,11 +799,6 @@ footer ul {
     z-index: 10;
     width: 100%;
     padding: 120px 40px 35px 40px; }
-    aside.is-visible {
-      visibility: visible;
-      opacity: 1;
-      transform: scale(1);
-      transition: all 0.250s; }
     aside h6 {
       text-align: center; }
     aside .aside--footer {
@@ -827,7 +844,29 @@ footer ul {
     bottom: 200px;
     margin: auto; }
   .menu-toggle {
-    display: block; } }
+    display: block; }
+  footer {
+    height: initial;
+    overflow: auto;
+    padding: 0 90px 20px 90px; }
+    footer img {
+      max-height: 55px; }
+    footer #gobackup {
+      width: 35px;
+      transform: translateY(0);
+      top: 0px; }
+    footer ul {
+      font-size: 13px;
+      width: 100%;
+      margin-left: 0;
+      padding-left: 0; }
+      footer ul li {
+        list-style: none;
+        display: inline;
+        float: left;
+        height: 100%;
+        margin-right: 25px;
+        padding-top: 19px; } }
 
 @media (max-width: 576px) {
   main {

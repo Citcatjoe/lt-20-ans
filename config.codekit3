@@ -622,6 +622,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/scss\/_mq.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_mq.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/scss\/_shame.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1266,19 +1279,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/scss\/mq.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/css\/mq.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/img\/1x\/Fichier 2-100.jpg": {
 		"ft": 16384,
 		"iS": 591172,
@@ -1690,6 +1690,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/empty.png": {
 		"ft": 32768,
 		"iS": 1986,
@@ -1716,6 +1726,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/glyph-00b.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/glyph-01.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/glyph-01.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

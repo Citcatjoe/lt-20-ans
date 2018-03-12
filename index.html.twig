@@ -1,8 +1,11 @@
+{# {% use '_blocks.html.twig' %} #}
 <!DOCTYPE HTML>
 
 <html> 
 
 	<head>
+		{# {{ block('head_brand') }} #}
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
@@ -35,14 +38,15 @@
 	</head>   
  
 	<body style="padding-top: {{ navBarOffset }};">
+		{{ block('bar_brand') }}
 		
-		<div class="overlay">
-			<!-- <img class="logo-brand" src="img/logo-lt-blanc.svg" alt="">
+		<!-- <div class="overlay">
+			<img class="logo-brand" src="img/logo-lt-blanc.svg" alt="">
 			<div class="spinner">
 				<div class="double-bounce1"></div>
 				<div class="double-bounce2"></div>
-			</div> -->
-		</div> 
+			</div>
+		</div>  -->
 
 		<a href="https://www.letemps.ch" target="_blank"><img src="img/logo-lt-rouge.svg" alt="logo Le Temps" id="logo-lt-header"></a>
 		<img src="img/glyph-00.svg" alt="" id="glyph-big" class="flip flip-00">	
@@ -54,6 +58,7 @@
 		<img src="img/glyph-06.svg" alt="" id="glyph-big" class="flip flip-06">
 		<img src="img/glyph-07.svg" alt="" id="glyph-big" class="flip flip-07">
 		<img src="img/menu.svg" alt="" class="menu-toggle menu-icon">
+		<img src="img/close.svg" alt="" class="menu-toggle close-icon">
 
 		<aside>
 			
@@ -109,7 +114,7 @@
 			</ul>
 			<img src="img/gobackup.svg" alt="" id="gobackup"> 
 		</footer>
-
+		 {# {{ block('footer_brand') }} #}
 		<script src="assets/js/owl.carousel.min.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/barba.min.js"></script>

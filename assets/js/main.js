@@ -2,27 +2,9 @@ jQuery(document).ready(function($) {
 
     $('.overlay').fadeOut('slow');
 
-    $('.menu-toggle').click(function () {
-        $('aside').toggleClass('is-visible');
-    }); 
+    
 
-    $('.slider').owlCarousel({
-        //loop: true,
-        loop: true,
-        margin: 0,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
+    
     
     Barba.Pjax.start();
     var FadeTransition = Barba.BaseTransition.extend({
@@ -71,6 +53,8 @@ jQuery(document).ready(function($) {
              */
 
             _this.done();
+            closeMenuIfMobile();
+            initSliders();
             });
         }
     });
@@ -84,6 +68,39 @@ jQuery(document).ready(function($) {
          */
         return FadeTransition;
     };
+
+    function initSliders(){
+        $('.slider').owlCarousel({
+            //loop: true,
+            loop: true,
+            margin: 0,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    }
+
+    function closeMenuIfMobile(){ 
+        if ($(window).width() < 768 && $('body').hasClass('menu-open')) {
+            setTimeout(function () {
+                $('.close-icon').trigger('click');
+            }, 1000);
+
+        }
+    }
+
+    $('.menu-toggle').click(function () {
+        $('body').toggleClass('menu-open');
+    }); 
         
     var glyphOutTl = new TimelineMax(),
     glyphInTl = new TimelineMax(),
