@@ -145,6 +145,83 @@
 		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/07_La_Suisse_laboratoire_politique.ai",
 		"oF": 0
 		},
+	"\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/ecologie.png": {
+		"ft": 32768,
+		"iS": 11250,
+		"oA": 0,
+		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/ecologie.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/economie-inclusive.png": {
+		"ft": 32768,
+		"iS": 6271,
+		"oA": 0,
+		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/economie-inclusive.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/egalite-homme-femme.png": {
+		"ft": 32768,
+		"iS": 4744,
+		"oA": 0,
+		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/egalite-homme-femme.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/journalisme.png": {
+		"ft": 32768,
+		"iS": 4066,
+		"oA": 0,
+		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/journalisme.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/letemps.png": {
+		"ft": 32768,
+		"iS": 2664,
+		"oA": 0,
+		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/letemps.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/suisse-labo-politique.png": {
+		"ft": 32768,
+		"iS": 4583,
+		"oA": 0,
+		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/suisse-labo-politique.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/technologie-au-service-de-lhomme.png": {
+		"ft": 32768,
+		"iS": 4859,
+		"oA": 0,
+		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/technologie-au-service-de-lhomme.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,

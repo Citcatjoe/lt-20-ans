@@ -17,19 +17,19 @@ nav ul li.c02:hover, nav ul li.c02.is-active {
   color: #d32e64; }
 
 nav ul li.c03:hover, nav ul li.c03.is-active {
-  color: #a400b3; }
+  color: #2fb312; }
 
 nav ul li.c04:hover, nav ul li.c04.is-active {
-  color: #004da6; }
-
-nav ul li.c05:hover, nav ul li.c05.is-active {
-  color: #00a6a3; }
-
-nav ul li.c06:hover, nav ul li.c06.is-active {
   color: #00a666; }
 
+nav ul li.c05:hover, nav ul li.c05.is-active {
+  color: #004da6; }
+
+nav ul li.c06:hover, nav ul li.c06.is-active {
+  color: #00a6a3; }
+
 nav ul li.c07:hover, nav ul li.c07.is-active {
-  color: #2fb312; }
+  color: #a400b3; }
 
 nav ul li.is-disabled:hover {
   color: initial !important; }
@@ -44,19 +44,19 @@ nav ul li.is-disabled:hover {
   color: #d32e64; }
 
 .themelist article.c03:not(.is-disabled):hover h5, .themelist article.c03:active h5 {
-  color: #a400b3; }
+  color: #2fb312; }
 
 .themelist article.c04:not(.is-disabled):hover h5, .themelist article.c04:active h5 {
-  color: #004da6; }
-
-.themelist article.c05:not(.is-disabled):hover h5, .themelist article.c05:active h5 {
-  color: #00a6a3; }
-
-.themelist article.c06:not(.is-disabled):hover h5, .themelist article.c06:active h5 {
   color: #00a666; }
 
+.themelist article.c05:not(.is-disabled):hover h5, .themelist article.c05:active h5 {
+  color: #004da6; }
+
+.themelist article.c06:not(.is-disabled):hover h5, .themelist article.c06:active h5 {
+  color: #00a6a3; }
+
 .themelist article.c07:not(.is-disabled):hover h5, .themelist article.c07:active h5 {
-  color: #2fb312; }
+  color: #a400b3; }
 
 .c00 .text-color {
   color: #930025; }
@@ -68,19 +68,19 @@ nav ul li.is-disabled:hover {
   color: #d32e64; }
 
 .c03 .text-color {
-  color: #a400b3; }
+  color: #2fb312; }
 
 .c04 .text-color {
-  color: #004da6; }
-
-.c05 .text-color {
-  color: #00a6a3; }
-
-.c06 .text-color {
   color: #00a666; }
 
+.c05 .text-color {
+  color: #004da6; }
+
+.c06 .text-color {
+  color: #00a6a3; }
+
 .c07 .text-color {
-  color: #2fb312; }
+  color: #a400b3; }
 
 .c00 .background-color {
   background-color: #930025; }
@@ -92,19 +92,19 @@ nav ul li.is-disabled:hover {
   background-color: #d32e64; }
 
 .c03 .background-color {
-  background-color: #a400b3; }
+  background-color: #2fb312; }
 
 .c04 .background-color {
-  background-color: #004da6; }
-
-.c05 .background-color {
-  background-color: #00a6a3; }
-
-.c06 .background-color {
   background-color: #00a666; }
 
+.c05 .background-color {
+  background-color: #004da6; }
+
+.c06 .background-color {
+  background-color: #00a6a3; }
+
 .c07 .background-color {
-  background-color: #2fb312; }
+  background-color: #a400b3; }
 
 .c00 .timeline:before {
   background-color: #930025; }
@@ -116,19 +116,19 @@ nav ul li.is-disabled:hover {
   background-color: #d32e64; }
 
 .c03 .timeline:before {
-  background-color: #a400b3; }
+  background-color: #2fb312; }
 
 .c04 .timeline:before {
-  background-color: #004da6; }
-
-.c05 .timeline:before {
-  background-color: #00a6a3; }
-
-.c06 .timeline:before {
   background-color: #00a666; }
 
+.c05 .timeline:before {
+  background-color: #004da6; }
+
+.c06 .timeline:before {
+  background-color: #00a6a3; }
+
 .c07 .timeline:before {
-  background-color: #2fb312; }
+  background-color: #a400b3; }
 
 .c00 .timeline .timeline-entry-dot {
   border: 3px solid #930025; }
@@ -140,19 +140,19 @@ nav ul li.is-disabled:hover {
   border: 3px solid #d32e64; }
 
 .c03 .timeline .timeline-entry-dot {
-  border: 3px solid #a400b3; }
+  border: 3px solid #2fb312; }
 
 .c04 .timeline .timeline-entry-dot {
-  border: 3px solid #004da6; }
-
-.c05 .timeline .timeline-entry-dot {
-  border: 3px solid #00a6a3; }
-
-.c06 .timeline .timeline-entry-dot {
   border: 3px solid #00a666; }
 
+.c05 .timeline .timeline-entry-dot {
+  border: 3px solid #004da6; }
+
+.c06 .timeline .timeline-entry-dot {
+  border: 3px solid #00a6a3; }
+
 .c07 .timeline .timeline-entry-dot {
-  border: 3px solid #2fb312; }
+  border: 3px solid #a400b3; }
 
 .c00 .timeline .triangle {
   border-top: 3px solid #930025;
@@ -167,24 +167,24 @@ nav ul li.is-disabled:hover {
   border-right: 3px solid #d32e64; }
 
 .c03 .timeline .triangle {
-  border-top: 3px solid #a400b3;
-  border-right: 3px solid #a400b3; }
+  border-top: 3px solid #2fb312;
+  border-right: 3px solid #2fb312; }
 
 .c04 .timeline .triangle {
-  border-top: 3px solid #004da6;
-  border-right: 3px solid #004da6; }
-
-.c05 .timeline .triangle {
-  border-top: 3px solid #00a6a3;
-  border-right: 3px solid #00a6a3; }
-
-.c06 .timeline .triangle {
   border-top: 3px solid #00a666;
   border-right: 3px solid #00a666; }
 
+.c05 .timeline .triangle {
+  border-top: 3px solid #004da6;
+  border-right: 3px solid #004da6; }
+
+.c06 .timeline .triangle {
+  border-top: 3px solid #00a6a3;
+  border-right: 3px solid #00a6a3; }
+
 .c07 .timeline .triangle {
-  border-top: 3px solid #2fb312;
-  border-right: 3px solid #2fb312; }
+  border-top: 3px solid #a400b3;
+  border-right: 3px solid #a400b3; }
 
 .c00 .timeline .owl-theme .owl-dots .owl-dot.active span, .c00 .timeline .owl-theme .owl-dots .owl-dot:hover span {
   background: #930025; }
@@ -196,19 +196,19 @@ nav ul li.is-disabled:hover {
   background: #d32e64; }
 
 .c03 .timeline .owl-theme .owl-dots .owl-dot.active span, .c03 .timeline .owl-theme .owl-dots .owl-dot:hover span {
-  background: #a400b3; }
+  background: #2fb312; }
 
 .c04 .timeline .owl-theme .owl-dots .owl-dot.active span, .c04 .timeline .owl-theme .owl-dots .owl-dot:hover span {
-  background: #004da6; }
-
-.c05 .timeline .owl-theme .owl-dots .owl-dot.active span, .c05 .timeline .owl-theme .owl-dots .owl-dot:hover span {
-  background: #00a6a3; }
-
-.c06 .timeline .owl-theme .owl-dots .owl-dot.active span, .c06 .timeline .owl-theme .owl-dots .owl-dot:hover span {
   background: #00a666; }
 
+.c05 .timeline .owl-theme .owl-dots .owl-dot.active span, .c05 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #004da6; }
+
+.c06 .timeline .owl-theme .owl-dots .owl-dot.active span, .c06 .timeline .owl-theme .owl-dots .owl-dot:hover span {
+  background: #00a6a3; }
+
 .c07 .timeline .owl-theme .owl-dots .owl-dot.active span, .c07 .timeline .owl-theme .owl-dots .owl-dot:hover span {
-  background: #2fb312; }
+  background: #a400b3; }
 
 html {
   font-size: 16px; }
@@ -415,26 +415,29 @@ footer {
   height: 100vh;
   background: white;
   z-index: 100; }
-  .overlay img {
+  .overlay .overlay-container {
+    width: 120px;
     position: absolute;
-    width: 150px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .overlay .load-container {
-    position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #930025;
-    width: 150px;
-    height: 20px;
-    padding: 2px; }
-    .overlay .load-container .load-container-bar {
-      position: absolute;
-      height: 75%;
-      width: 142px;
-      background: #930025; }
+    .overlay .overlay-container .img-container {
+      opacity: 0; }
+      .overlay .overlay-container .img-container img {
+        width: 100%;
+        margin-bottom: 20px; }
+    .overlay .overlay-container .load-container {
+      position: relative;
+      opacity: 0;
+      border: 2px solid #930025;
+      width: 120px;
+      height: 15px;
+      padding: 2px; }
+      .overlay .overlay-container .load-container .load-container-bar {
+        position: absolute;
+        height: 65%;
+        width: 115px;
+        background: #930025; }
 
 #logo-lt-header {
   position: absolute;
@@ -539,6 +542,10 @@ nav ul {
   position: relative;
   margin-bottom: 30px;
   cursor: pointer; }
+  .themelist article.is-disabled {
+    cursor: initial; }
+  .themelist article.is-disabled h5 {
+    opacity: .1; }
   .themelist article.margin1 {
     margin-left: 450px; }
   .themelist article.margin2 {

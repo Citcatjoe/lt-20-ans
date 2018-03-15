@@ -1,14 +1,31 @@
 jQuery(document).ready(function($) {
 
     // $('.overlay').fadeOut('slow');
-    
-    // var overlayTl = new TimelineMax(),
-    //     $overlay = $('.overlay');
+    var overlayTl = new TimelineMax(),
+        $overlay = $('.overlay');
+        // $imgContainer = $('.img-container'),
+        // $loadContainer = $('.load-container'),
+        // $loadContainerBar = $('.load-container-bar');
 
         // overlayTl
-        //     .to($overlay, 1, { autoAlpha: 0, ease: Power4.easeInOut});
+        //     .set($imgContainer, {autoAlpha: 0, y: '-=30px'})
+        //     .set($loadContainer, { autoAlpha: 0, y: '-=30px' })
+        //     .set($loadContainerBar, { width: '0px' });
 
-    
+        overlayTl
+            // .to($loadContainer, 0.750, { autoAlpha: 1, y: "+=30px", ease: Power4.easeInOut })
+            // .to($imgContainer, 0.750, { autoAlpha: 1, y: "+=30px", ease: Power4.easeInOut }, '-=0.5')
+            // .to($loadContainerBar, 0.750, { width: '70px', ease: Power0.easeNone }, '+=0.750')
+            // .to($loadContainerBar, 0.750, { width: '90px', ease: Power0.easeNone })
+            // .to($loadContainerBar, 0.1, { width: '112px', ease: Power0.easeNone })
+
+            // .to($loadContainerBar, 0.250, { opacity: 0.5, ease: Power0.easeNone })
+            // .to($loadContainerBar, 0.250, { opacity: 1, ease: Power0.easeNone })
+
+            // .to($loadContainer, 0.750, { autoAlpha: 0, y: "+=30px", ease: Back.easeInOut })
+            // .to($imgContainer, 0.750, { autoAlpha: 0, y: "+=30px", ease: Back.easeOut }, '-=0.26');
+            // .to($overlay, 0.5, { autoAlpha: 0, ease: Power4.easeInOut }, '-=0.75');
+            .to($overlay, 0.5, { autoAlpha: 0, ease: Power4.easeInOut }, '+=1.00');
 
     
     

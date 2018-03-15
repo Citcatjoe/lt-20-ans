@@ -12,35 +12,56 @@
     background: white;
     z-index: 100;
 
-    img 
+    .overlay-container
     {
+        width: 120px;
         position: absolute;
-        width: 150px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
 
-    .load-container
-    {
-        position: absolute;
-        top: 62%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        border: 2px solid $color00;
-        width: 150px; 
-        height: 20px;
-        padding: 2px;
-
-        .load-container-bar
+        .img-container 
         {
-            position: absolute;
-            height: 75%;
-            width: 142px;
-            background: $color00;
+            opacity: 0;
+
+            img 
+            {
+                // position: absolute;
+                width: 100%;;
+                margin-bottom: 20px;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+            }
+        }
+
+        
+
+        .load-container
+        {
+            // position: absolute;
+            // top: 62%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            position: relative;
+
+            opacity: 0;
+            border: 2px solid $color00;
+            width: 120px; 
+            height: 15px;
+            padding: 2px;
+
+            .load-container-bar
+            {
+                position: absolute;
+                height: 65%;
+                width: 115px;
+                background: $color00;
+            }
         }
     }
+
+    
 }
 
 #logo-lt-header
@@ -218,6 +239,9 @@ nav
         position: relative;
         margin-bottom: 30px;
         cursor: pointer;
+
+         &.is-disabled { cursor: initial; }
+        &.is-disabled h5 { opacity: .1; }
 
         &.margin1 {margin-left: 450px;}
         &.margin2 {margin-left: 110px;}
