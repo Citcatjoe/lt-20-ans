@@ -31,6 +31,7 @@ $uri = $_SERVER['REQUEST_URI'];
 
 $app->url = 'https://' . $host . $uri;
 $app->base_url = 'https://' . $host;
+$app->base_path = rtrim(parse_url($uri, PHP_URL_PATH), '/');
 $variables = array_merge($variables, array('app' => $app));
 
 

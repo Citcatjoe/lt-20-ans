@@ -1,6 +1,19 @@
 {% extends "index.html.twig" %}
 
-
+{% block metas %}
+<meta property="og:title" content="Le Temps de s'engager" />
+<meta property="og:image" content="{{ app.base_url ~ app.base_path }}/img/share/social.jpg" />
+<meta property="og:url" content="{{ app.url }}" />
+<meta property="og:description" content="Pour ses 20 ans, l'âge où l'on s'engage, «Le Temps» se donne une mission" />
+<meta property="og:type" content="article" />
+<meta property="fb:app_id" content="100160886777903" />
+<meta name="twitter:image" content="{{ app.base_url ~ app.base_path }}/img/share/social.jpg" /> 
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@letemps" />
+<meta name="twitter:title" content="Le Temps de s'engager" />
+<meta name="twitter:description" content="Pour ses 20 ans, l'âge où l'on s'engage, «Le Temps» se donne une mission" />
+<link rel="image_src" href="{{ app.base_url ~ app.base_path }}/img/share/social.jpg" />
+{% endblock %}
 
 {% block container %}
 <div class="barba-container">

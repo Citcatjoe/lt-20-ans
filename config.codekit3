@@ -1986,7 +1986,7 @@
 		"oAP": "\/img\/share\/header-home-article.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/share\/social.jpg": {
@@ -1996,7 +1996,7 @@
 		"oAP": "\/img\/share\/social.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/tilt-fioul-lourd.jpg": {
