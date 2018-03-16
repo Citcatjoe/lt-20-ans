@@ -36,8 +36,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/Capture d’écran 2018-02-22 à 16.36.27.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -47,8 +47,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/Capture d’écran 2018-02-22 à 17.24.16.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -58,8 +58,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/Capture d’écran 2018-02-22 à 17.24.35.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -151,8 +151,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/ecologie.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -162,8 +162,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/economie-inclusive.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -173,8 +173,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/egalite-homme-femme.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -184,8 +184,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/journalisme.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -195,8 +195,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/letemps.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -206,8 +206,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/suisse-labo-politique.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -217,8 +217,8 @@
 		"oA": 0,
 		"oAP": "\/_prod\/LeTemps_Logotypes_Causes_CS6_01\/technologie-au-service-de-lhomme.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1356,6 +1356,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/scss\/mq.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/css\/mq.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/img\/1x\/Fichier 2-100.jpg": {
 		"ft": 16384,
 		"iS": 591172,
@@ -1363,7 +1376,7 @@
 		"oAP": "\/img\/1x\/Fichier 2-100.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/2x\/aside-bg.jpg": {
@@ -1383,7 +1396,7 @@
 		"oAP": "\/img\/2x\/Fichier 2@2x-80.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/2x\/Fichier 2sss.jpg": {
@@ -1393,7 +1406,7 @@
 		"oAP": "\/img\/2x\/Fichier 2sss.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article-card-fioul-lourd.jpg": {
@@ -1403,7 +1416,7 @@
 		"oAP": "\/img\/article-card-fioul-lourd.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article-card-horlogerie-japonaise.jpg": {
@@ -1413,7 +1426,7 @@
 		"oAP": "\/img\/article-card-horlogerie-japonaise.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article-card-parc-adula.jpg": {
@@ -1423,7 +1436,7 @@
 		"oAP": "\/img\/article-card-parc-adula.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article-card-shenzen.jpg": {
@@ -1433,7 +1446,7 @@
 		"oAP": "\/img\/article-card-shenzen.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article-card-tcherno-30-ans.jpg": {
@@ -1443,7 +1456,7 @@
 		"oAP": "\/img\/article-card-tcherno-30-ans.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/accueil-placeholder.jpg": {
@@ -1453,7 +1466,7 @@
 		"oAP": "\/img\/article\/accueil-placeholder.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/accueil-placeholderold.jpg": {
@@ -1463,7 +1476,7 @@
 		"oAP": "\/img\/article\/accueil-placeholderold.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/champ-square.jpg": {
@@ -1473,7 +1486,7 @@
 		"oAP": "\/img\/article\/champ-square.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/champ.jpg": {
@@ -1483,7 +1496,7 @@
 		"oAP": "\/img\/article\/champ.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/end.jpg": {
@@ -1493,7 +1506,7 @@
 		"oAP": "\/img\/article\/end.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/header.jpg": {
@@ -1503,7 +1516,7 @@
 		"oAP": "\/img\/article\/header.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/interview1.png": {
@@ -1512,8 +1525,8 @@
 		"oA": 0,
 		"oAP": "\/img\/article\/interview1.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1524,7 +1537,7 @@
 		"oAP": "\/img\/article\/interview2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/map.jpg": {
@@ -1534,7 +1547,7 @@
 		"oAP": "\/img\/article\/map.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider1.jpg": {
@@ -1544,7 +1557,7 @@
 		"oAP": "\/img\/article\/slider1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider10.jpg": {
@@ -1554,7 +1567,7 @@
 		"oAP": "\/img\/article\/slider10.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider11.jpg": {
@@ -1564,7 +1577,7 @@
 		"oAP": "\/img\/article\/slider11.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider12.jpg": {
@@ -1574,7 +1587,7 @@
 		"oAP": "\/img\/article\/slider12.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider13.jpg": {
@@ -1584,7 +1597,7 @@
 		"oAP": "\/img\/article\/slider13.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider14.jpg": {
@@ -1594,7 +1607,7 @@
 		"oAP": "\/img\/article\/slider14.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider2.jpg": {
@@ -1604,7 +1617,7 @@
 		"oAP": "\/img\/article\/slider2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider3.jpg": {
@@ -1614,7 +1627,7 @@
 		"oAP": "\/img\/article\/slider3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider4.jpg": {
@@ -1624,7 +1637,7 @@
 		"oAP": "\/img\/article\/slider4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/slider5.jpg": {
@@ -1634,7 +1647,7 @@
 		"oAP": "\/img\/article\/slider5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/step1.jpg": {
@@ -1644,7 +1657,7 @@
 		"oAP": "\/img\/article\/step1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/step2.jpg": {
@@ -1654,7 +1667,7 @@
 		"oAP": "\/img\/article\/step2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/step3.jpg": {
@@ -1664,7 +1677,7 @@
 		"oAP": "\/img\/article\/step3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/step4.jpg": {
@@ -1674,7 +1687,7 @@
 		"oAP": "\/img\/article\/step4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/step5.jpg": {
@@ -1684,7 +1697,7 @@
 		"oAP": "\/img\/article\/step5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/step6.jpg": {
@@ -1694,7 +1707,7 @@
 		"oAP": "\/img\/article\/step6.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/step7.jpg": {
@@ -1704,7 +1717,7 @@
 		"oAP": "\/img\/article\/step7.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/step8.jpg": {
@@ -1714,7 +1727,7 @@
 		"oAP": "\/img\/article\/step8.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/article\/tooltip.jpg": {
@@ -1724,7 +1737,7 @@
 		"oAP": "\/img\/article\/tooltip.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/aside-bg.jpg": {
@@ -1734,7 +1747,7 @@
 		"oAP": "\/img\/aside-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/catherine-f.jpg": {
@@ -1744,7 +1757,7 @@
 		"oAP": "\/img\/catherine-f.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/checkbox-checked.svg": {
@@ -1783,8 +1796,8 @@
 		"oA": 0,
 		"oAP": "\/img\/empty.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1964,8 +1977,8 @@
 		"oA": 0,
 		"oAP": "\/img\/partner-logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1976,7 +1989,7 @@
 		"oAP": "\/img\/placeholder.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/share\/header-home-article.jpg": {
@@ -2006,7 +2019,7 @@
 		"oAP": "\/img\/tilt-fioul-lourd.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/index.html.twig": {
@@ -2075,6 +2088,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/templates\/_blocks.html.twig",
+		"oF": 0
+		},
+	"\/templates\/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/README.html",
 		"oF": 0
 		},
 	"\/templates\/README.md": {
@@ -6546,6 +6566,20 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/TokenStreamTest.php",
+		"oF": 0
+		},
+	"\/x01.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/x01.html.twig",
+		"oF": 0
+		},
+	"\/x02.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/x02.html.twig",
 		"oF": 0
 		}
 	},
